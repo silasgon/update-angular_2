@@ -1,0 +1,15 @@
+<section>
+  <article>
+    <h2>Interpolation / Interpolação</h2>
+    <p>String renderizada vom interpolação: {{ url }}</p>
+    <p style="font-weight: bold;">O Angular 2+ pode resolver expressões dentro da interpolação</p>
+    <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+    <p>Resultado de 1 + 1 não é {{ 1 + 1 +getValor() }}</p>
+    <p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}</p>
+  </article>
+  <article>
+    <h2>Property Binding</h2>
+    <img src="{{ urlImage }}">
+    <img [src]="urlImage2">
+  </article>
+</section>
