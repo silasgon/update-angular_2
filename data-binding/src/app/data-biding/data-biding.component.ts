@@ -13,10 +13,11 @@ export class DataBidingComponent implements OnInit {
   urlImage2: string = 'http://lorempixel.com.br/500/400/?2';
 
   valorAtual: string = '';
-  valorSalvo: string = ''
+  valorSalvo: string = '';
 
   isMouseOver: boolean = false;
 
+  
   getValor() {
     return 1;
   }
@@ -29,16 +30,16 @@ export class DataBidingComponent implements OnInit {
     alert('Botão Clicado');
   }
 
-  onKeyUp(evento: KeyboardEvent){
-    this.valorAtual = ((evento.target as HTMLInputElement).value);
+  onKeyUp(evento: KeyboardEvent) {
+    this.valorAtual = (evento.target as HTMLInputElement).value;
   }
 
-  onMouseOverOut(){
-    this.isMouseOver = !this.isMouseOver
+  onMouseOverOut() {
+    this.isMouseOver = !this.isMouseOver;
   }
 
-  salvarValor(valor: any){
-this.valorSalvo = valor;
+  salvarValor(valor: any) {
+    this.valorSalvo = valor;
   }
 
   constructor() {}

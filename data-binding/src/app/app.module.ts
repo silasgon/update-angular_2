@@ -1,4 +1,6 @@
+import { MeuFormModule } from './meu-form/meu-form.module';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { TooltipModule } from "ngx-bootstrap/tooltip";
 
@@ -15,6 +17,8 @@ import { DataBidingComponent } from './data-biding/data-biding.component';
     BrowserModule,
     AppRoutingModule,
     TooltipModule.forRoot(),
+    FormsModule,
+    MeuFormModule
   ],
   providers: [],
   bootstrap: [AppComponent]
