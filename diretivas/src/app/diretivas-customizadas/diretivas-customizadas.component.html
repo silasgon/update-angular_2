@@ -10,3 +10,18 @@
 <p appHighlight [defaultColor]="'gray'" [highlightColor]="'red'">
   Texto con highlight com cores customizadas
 </p>
+
+<br>
+<button (click)="onMostrarCursos()">Mostrar ou esconder Cursos</button>
+<br>
+<div *ngElse="mostrarCursos">
+  Lista de cursos aqui.
+  </div>
+  <br>
+  <template [ngElse]="mostrarCursos">
+    <div>
+      não existe cursos
+    </div>
+  </template>
+
+
